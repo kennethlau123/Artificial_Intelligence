@@ -5,12 +5,12 @@ import java.util.*;
 import java.util.ArrayList; 
 import java.util.List; 
 import java.util.Random;
-public class HelloWorld
+public class Betgame
 {
 
     public static void main(String args[])
 	{
-        			int win = 0;
+        		int win = 0;
 			int lose = 0;
 			int[] door = new int[0];
 			int[] door1= {1,2,3};
