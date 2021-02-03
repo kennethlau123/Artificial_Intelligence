@@ -23,8 +23,8 @@ public class Betgame
 			{
 				int ran=r.nextInt(door1.length);
 				int ran2=r.nextInt(prize1.length);
-			    int ran3=r.nextInt(choose1.length);
-			    int realdoor = door1[ran];
+			    	int ran3=r.nextInt(choose1.length);
+			    	int realdoor = door1[ran];
 				int realprize = prize1[ran2];
 				int realchoose = choose1[ran3];
 				if (realchoose == realprize & realprize == realdoor)
