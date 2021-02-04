@@ -5,9 +5,15 @@ import java.util.*;
 import java.util.ArrayList; 
 import java.util.List; 
 import java.util.Random;
+import java.text.DecimalFormat;
 public class Betgame
 {
-
+    public static String txfloat(int a,int b) 
+    	{
+	    DecimalFormat df=new DecimalFormat("0.00");
+	    return df.format((float)a/b);
+	}
+	
     public static void main(String args[])
 	{
         		int win = 0;
@@ -80,9 +86,11 @@ public class Betgame
 				}
 			}
 			
-			System.out.println("changewin = "+changewin);
+			System.out.print("changewin = "+changewin+" ;  ");
 			System.out.println("changelose = "+changelose);
-			System.out.println("Not change Win = "+win);
+			System.out.print("Not change Win = "+win+" ;  ");
 			System.out.println("Not change lose = "+lose);
+			System.out.println("changewin%= "+(txfloat(changewin,1000000))+"%");
+			System.out.println("Not change Win%= "+(txfloat(win,1000000))+"%");
 	}
 }
